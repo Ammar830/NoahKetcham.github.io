@@ -39,7 +39,7 @@ h1:hover {
 
 /* Styling for portfolio title text */
 .white-text {
-    color: #ff9e24; /* This is used to change the color of the portfolio title text */
+    color: white; /* This is used to change the color of the portfolio title text */
         padding-top: 10vh;
 }
 /*--------------------------------------------------------------------------------------------------------------*/
