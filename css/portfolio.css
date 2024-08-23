@@ -417,10 +417,7 @@ footer {
     cursor: pointer; /* This changes the cursor when hovered over the button to a pointer */
     -webkit-animation: movePopup 1s; /* Animation for 5 seconds for Safari 4.0-8.0 */
     animation: movePopup 1s; /* Animation set for 5 seconds */
-<<<<<<< Updated upstream
-=======
     opacity: 80%;
->>>>>>> Stashed changes
 }
 
 /* movePopup animation moves the button from off the right side of the screen to its fixed location on the viewport */
@@ -498,13 +495,8 @@ button:hover, .form-container .btn:hover {
 
 /* Styling for close button on hover */
 .form-container .cancel:hover {
-<<<<<<< Updated upstream
-    color: rgb(128, 13, 13);
-    background-color: darkred;
-=======
     color: greenyellow;
     background-color: black;
->>>>>>> Stashed changes
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
     border-color: black;
