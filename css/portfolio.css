@@ -33,7 +33,7 @@ h1 {
 /*Heading 1 elements hover effect */
 h1:hover {
     filter: grayscale(5%);  /*Adds a slightlygray filterto the h1 headings when hovered over */
-    transform: scale(1.2); /* When the h1 elements are hovered over they increase in size by 1.1 */
+    transform: scale(1.005); /* When the h1 elements are hovered over they increase in size by 1.1 */
     transition: transform 3s; /* This causes the transformation to last one second */
 }
 
@@ -69,7 +69,7 @@ p {
 /* paragraph element hover effect */
 p:hover {
     transition: transform 1s; /* This makes the transform effect last 1 second */
-    transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
+    transform: scale(1.005); /* This makes the paragraphs increase slightly in size when hovered over */
 }
 
 /* Center class - this applies to all elements with the class "center" */
@@ -79,8 +79,8 @@ p:hover {
 
 /* Center class hover effect - This only affects the quote, github link, and footer */
 .center:hover {
-    transition: transform 2s;  /* This makes the transform effect last 2 seconds */
-    transform: scale(1.05);  /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
+    transition: transform 1s;  /* This makes the transform effect last 2 seconds */
+    transform: scale(1.005);  /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
 }
 
 /* Anchor elements */
@@ -141,8 +141,8 @@ footer {
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
     z-index: 1; /* This ensures other elements don't display over the navbar */
-    -webkit-animation: moveNav 2s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
-    animation: moveNav 3s; /* This applies the moveNav animation for all other browsers */
+    -webkit-animation: moveNav 1s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
+    animation: moveNav 1s; /* This applies the moveNav animation for all other browsers */
 }
 
 /* moveNav animation effect for moving the nav bar in from the left of the screen */
@@ -162,8 +162,8 @@ footer {
     font-size: 20px; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveNavText 2s; /* Animation for Safari 4.0 - 8.0 */
-    animation: moveNavText 2s; /* Applies the moveNavText animation for 5.75s */ 
+    -webkit-animation: moveNavText 1.5s; /* Animation for Safari 4.0 - 8.0 */
+    animation: moveNavText 1.5s; /* Applies the moveNavText animation for 5.75s */ 
     border: 1px solid #797b7f;
     border-radius: 5px;
 }
@@ -188,7 +188,7 @@ footer {
     color: #601e9e; /* This defines the font color that will display when navbar a elements are hovered over */
     font-weight: bold; /* This makes the text on the navbar bold when hovered over */
         cursor: pointer;
-        transition: 0.5s ease-in;
+        transition: 0.1s ease-in-out;
 }
 
 /* Navbar home button */
@@ -344,7 +344,9 @@ footer {
 
 /******************** End Slideshow Styling *************************************************************/
 
+
 /***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
+
 * { /* The asterisk is a universal selector that applies this effect to all elements on the page */
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
 } 
@@ -401,8 +403,8 @@ footer {
     color: black; /* Sets the color of the button text to black */
     border: solid black; /* This makes a solid black border around the button */
     cursor: pointer; /* This changes the cursor when hovered over the button to a pointer */
-    -webkit-animation: movePopup 5s; /* Animation for 5 seconds for Safari 4.0-8.0 */
-    animation: movePopup 5s; /* Animation set for 5 seconds */
+    -webkit-animation: movePopup 1s; /* Animation for 5 seconds for Safari 4.0-8.0 */
+    animation: movePopup 1s; /* Animation set for 5 seconds */
 }
 
 /* movePopup animation moves the button from off the right side of the screen to its fixed location on the viewport */
@@ -480,7 +482,7 @@ button:hover, .form-container .btn:hover {
 
 /* Styling for close button on hover */
 .form-container .cancel:hover {
-    color: rgb(226, 25, 25);
+    color: rgb(128, 13, 13);
     background-color: darkred;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
